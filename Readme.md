@@ -1,6 +1,6 @@
 # ADIC LABS
 
-Labs of Advanced Design of Integrated Circuit.
+Labs of Advanced Digital Integrated Circuit Design.
 
 ## [LAB1](/lab1)
 
