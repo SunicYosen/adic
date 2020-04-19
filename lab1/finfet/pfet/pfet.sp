@@ -13,7 +13,7 @@
 *------------------------------------------------
 * Simulation netlist
 *------------------------------------------------
-* nmos
+* pmos
 Vgs g gnd 0
 Vds d gnd vddp
 *--  d g  s   b  model
@@ -23,10 +23,7 @@ Xmn1 d g gnd gnd pfet l=lg nfin=NFINP
 * Stimulus
 *------------------------------------------------
 .op all
-* .dc Vds 0 vdd 0.001 SWEEP Vgs 0 vdd 0.1
-* .dc Vgs 0 vdd 0.001 SWEEP Vds 0 vdd 0.1
-* .dc Vgs 0 vdd 0.001 SWEEP Vds 0.05 vdd 'vdd-0.05'
-.dc Vgs 0 vddp -0.01
+.dc Vgs 0 vddp -0.01 SWEEP vds -0.05  vddp 'vddp+0.05'
 
 *------------------------------------------------
 * OUTPUT
@@ -37,9 +34,9 @@ Xmn1 d g gnd gnd pfet l=lg nfin=NFINP
 .measure dc vth find V(g) when I(Vds)='0.1u * NFINP * (2 * fin_height + fin_width) / lg'
 .measure dc v2 find V(g) when I(Vds)='0.01u * NFINP * (2 * fin_height + fin_width) / lg'
 * Find I off
-.measure dc Ioff find par('-I(Vds)') when V(g)=vddp
+.measure dc Ioff find par('-I(Vds)') when V(g)=0
 * Find I on
-.measure dc Ion find par('-I(Vds)') when V(g)=0
+.measure dc Ion find par('-I(Vds)') when V(g)=vddp
 * SS
 .measure dc ss PARAM='vth - v2'
 
