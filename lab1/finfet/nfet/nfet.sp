@@ -3,7 +3,7 @@
 *------------------------------------------------
 * Parameters and models
 *------------------------------------------------
-.lib "../../../ptm_mg_lib/lib/models" ptm7lstp
+.lib "../../../ptm_mg_lib/lib/models" ptm7hp
 .options post postlvl-2
 .global vdd gnd
 .temp   25.0
