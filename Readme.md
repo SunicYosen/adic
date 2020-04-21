@@ -9,3 +9,9 @@ Include finfet, invertor and xor design.
 ### [Finfet](/lab1/finfet)
 
 This part, nfet and pfet are designed with ptm-mg library.
+
+### [Invertor](/lab1/invertor)
+
+Invertor delay, Invertor power and Invertor chain.
+
+### [xor](/lab1/xor)
