@@ -24,11 +24,11 @@ Xmn2 invout invin gnd gnd nfet l='l' nfin='nfinn'
 Vdd1     vdd    gnd  'vdd'
 Vin1     in   gnd  pulse 0 'vdd' 100ps 100ps 100ps 400ps 1000ps
 * Shape input 
-Xininv   in   out1 inv   l=lg    nfinn=1           beta='beta'
+Xininv   in   out1 inv   l=lg    nfinn=1            beta='beta'
 * Dut
-Xdutinv  out1 out  inv   l=lg    nfinn='invnfinn'  beta='beta'
+Xdutinv  out1 out  inv   l=lg    nfinn='invnfinn'   beta='beta'
 * Load FO4
-Xloadinv out  out2 inv   l=lg    nfinn=4           beta='beta'
+Xloadinv out  out2 inv   l=lg    nfinn='invnfinn*4' beta='beta'
 
 *------------------------------------------------
 * Simulation
