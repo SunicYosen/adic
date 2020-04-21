@@ -28,11 +28,17 @@ Xdutinv  out1 out  inv   l=lg    nfinn='invnfinn'  beta='beta'
 Xloadinv out  out2 inv   l=lg    nfinn=4           beta=2
 * Cload  gnd  out  5f
 
+*------------------------------------------------
+*  Optimization setup
+*------------------------------------------------
+.param beta=optrange(1, 1, 4)
+.model optmod opt itropt=40
+.measure bestbeta param='beta'
 
 *------------------------------------------------
 * Simulation
 *------------------------------------------------
-.tran 1fs 1000ps sweep beta 1 4 1
+.tran 1fs 1000ps sweep optimize=optrange results=diff model=optmod
 .op all
 
 *------------------------------------------------
@@ -46,6 +52,6 @@ Xloadinv out  out2 inv   l=lg    nfinn=4           beta=2
 + trig v(out1) val='vdd/2' fall=1
 + targ v(out)  val='vdd/2' rise=1
 
-.measure delta_tp param='abs(tplh - tphl)'
+.measure diff param='abs(tplh - tphl)' goal=0
 
 .end
