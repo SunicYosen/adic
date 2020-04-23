@@ -2,7 +2,7 @@
 
 BASE_DIR = $(abspath .)
 
-PRO_NAME ?= xor
+PRO_NAME ?= com-cmos-xor
 WORK_DIR ?= $(BASE_DIR)/$(PRO_NAME)
 
 HSPICE  ?= hspice
