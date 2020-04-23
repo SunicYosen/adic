@@ -133,7 +133,7 @@ Xload out end vddl invl nfinn=16 beta=1
 
 .measure tpavg_ns param="(abs(tp000111)+abs(tp111011)+abs(tp101001)+abs(tp001110)+abs(tp110010)+abs(tp100000)) / 6"
 
-.measure area_m2 param="26 * (2 * fin_height + fin_width) * lg"
+.measure area_m2 param="104 * (2 * fin_height + fin_width) * lg"
 
 .measure pwr_w avg '-p(vdd1)' from=4ns to=8ns
 .measure pdp param='pwr_w * pulset_a / 2'
