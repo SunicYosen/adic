@@ -1,4 +1,4 @@
-* .title com cmos xor
+* .title xor
 
 *------------------------------------------------
 * Parameters and models
