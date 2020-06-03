@@ -4,7 +4,7 @@
 * Libs and sub-circuits
 *------------------------------------------------
 .lib "../../ptm_mg_lib/lib/models" ptm7hp
-.include invertor.sp
+.include invertor_cmos.sp
 
 *------------------------------------------------
 * Parameters
