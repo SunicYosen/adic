@@ -15,3 +15,7 @@ This part, nfet and pfet are designed with ptm-mg library.
 Invertor delay, Invertor power and Invertor chain.
 
 ### [xor](/lab1/xor)
+
+## [LAB2](/lab2)
+
+32-bit adder
