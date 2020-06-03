@@ -16,6 +16,8 @@ Invertor delay, Invertor power and Invertor chain.
 
 ### [xor](/lab1/xor)
 
+XOR Design
+
 ## [LAB2](/lab2)
 
 32-bit adder
