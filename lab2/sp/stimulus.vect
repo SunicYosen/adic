@@ -1,0 +1,38 @@
+; basic stimulus and instructions for test
+radix 4444 4444 4444 4444
+vname A[31:16] A[15:0] B[31:16] B[15:0]
+io iiii iiii iiii iiii
+
+tunit ns
+tdelay 0.5
+slope 0.015
+period 1
+
+vih 0.7
+vil 0
+;vth 0.43
+
+;0x0 + 0x0
+;0000 0000 0000 0000
+
+; For dynamic power
+0000  0000  FFFF  FFFF
+FFFF  FFFF  0000  0000
+5555  5555  0000  0000	
+0000  0000  5555  5555
+AAAA  AAAA  0000  0000
+0000  0000  AAAA  AAAA
+AAAA  AAAA  FFFF  FFFF
+FFFF  FFFF  5555  5555
+
+; For leakage power
+0000  0000  0000  0000
+FFFF  FFFF  FFFF  FFFF
+0000  0000  FFFF  FFFF
+FFFF  FFFF  0000  0000
+AAAA  AAAA  AAAA  AAAA
+5555  5555  5555  5555
+5555  5555  AAAA  AAAA
+AAAA  AAAA  5555  5555
+
+; You may add the input patterns for critical paths here:
