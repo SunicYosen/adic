@@ -11,7 +11,7 @@ PRO_NAME      ?= invertor_test
 PRO_WORK_DIR   = $(WORK_DIR)/$(PRO_NAME)
 
 HSPICE        ?= hspice
-HSPICE_OPTS   += 
+HSPICE_OPTS   += -mt 4 -i
 HSPICE_FILES   = $(SP_DIR)/*.sp \
                  $(SP_DIR)/*.vect
 
