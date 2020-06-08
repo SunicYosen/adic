@@ -1,9 +1,9 @@
-* .title 32-bit adder
+* .title Invertor test
 
 *------------------------------------------------
 * Libs and sub-circuits
 *------------------------------------------------
-.lib "../../ptm_mg_lib/lib/models" ptm7hp
+.lib "../../ptm_mg_lib/lib/models" ptm7lstp
 .include invertor_cmos.sp
 
 *------------------------------------------------
@@ -17,7 +17,7 @@
 
 
 *------------------------------------------------
-* Circuit Netlist
+* Test Circuit Netlist
 *------------------------------------------------
 Vdd1     vdd  gnd  'vdd'
 Vin1     in   gnd  pulse 0 'vdd' 100ps 100ps 100ps 400ps 1000ps

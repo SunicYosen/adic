@@ -1,14 +1,10 @@
 * .title Invertor sub circuit
 
 *------------------------------------------------
-* Parameters and models
-*------------------------------------------------
-*
-
-*------------------------------------------------
 * Invertor Sub-Circuit
 *------------------------------------------------
-.SUBCKT inv invin invout l=lg nfinn=1 beta=2
+.SUBCKT inv invin invout 
++ l=lg nfinn=1 beta=2
 Xmp1 invout invin vdd vdd pfet l='l' nfin='nfinn*beta'
 Xmn2 invout invin gnd gnd nfet l='l' nfin='nfinn'
 .ENDS
