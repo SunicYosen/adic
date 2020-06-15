@@ -17,6 +17,6 @@ Xmn2  gout_n g0   p_p01 gnd  nfet l='l' nfin='nfinn'
 Xmn3  pout_n p0   p_p01 gnd  nfet l='l' nfin='nfinn'
 Xmn4  p_p01  p1   p_p12 gnd  nfet l='l' nfin='nfinn'
 Xmn5  p_p12  p2   gnd   gnd  nfet l='l' nfin='nfinn'
-Xinv0 gout_n gout            inv  l="l" nfinn='nfinn'  beta='inv_beta'
-Xinv1 pout_n pout            inv  l="l" nfinn='nfinn'  beta='inv_beta'
+Xinv0 gout_n gout            inv  l="l" nfinn='nfinn*2'  beta='inv_beta'
+Xinv1 pout_n pout            inv  l="l" nfinn='nfinn*2'  beta='inv_beta'
 .ENDS
