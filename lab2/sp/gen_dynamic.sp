@@ -3,7 +3,7 @@
 *------------------------------------------------
 * Sub-circuit
 *------------------------------------------------
-.SUBCKT gen clk  ina  inb  gout l=lg nfinn=2 pfinn=1 inv_beta=1
+.SUBCKT gen clk  ina  inb  gout l=lg  nfinn=4 pfinn=1 inv_beta=1
 Xmp0 gout_n clk  vdd  vdd  pfet l='l' nfin='pfinn'
 Xmp1 p_ab   clk  vdd  vdd  pfet l='l' nfin='pfinn'
 Xmp2 gout_n gout vdd  vdd  pfet l='l' nfin='pfinn'

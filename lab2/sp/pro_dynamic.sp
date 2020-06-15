@@ -11,5 +11,5 @@ Xmn1 p1     inb   pc   gnd  nfet  l='l' nfin='nfinn'
 Xmn2 pout_n inb_n p2   gnd  nfet  l='l' nfin='nfinn'
 Xmn3 p2     ina   pc   gnd  nfet  l='l' nfin='nfinn'
 Xmn4 pc     clk   gnd  gnd  nfet  l='l' nfin='nfinn'
-Xinv pout_n pout            inv   l="l" nfinn='nfinn' beta='inv_beta'
+Xinv pout_n pout            inv   l="l" nfinn='nfinn*2' beta='inv_beta'
 .ENDS

@@ -21,7 +21,7 @@
 *------------------------------------------------
 ** Drive Circuits
 Vddd vdd  gnd 'vdd'
-VClk clk  gnd pulse 0 'vdd' 10ps 10ps 10ps 500ps 1000ps
+Vclk clk  gnd pulse 0 'vdd' 10ps 10ps 10ps 500ps 1000ps
 
 ** Drive Load
 Vddl vddl gnd 'vdd'
@@ -85,6 +85,12 @@ Xinvl32  c32   c32_n   vddl invl
 *------------------------------------------------
 * Simulation
 *------------------------------------------------
-.tran 10ps 5ns
+.tran 100ps 20ns
+
+*------------------------------------------------
+* Measure
+*------------------------------------------------
+.measure pwr_d avg '-p(Vddd)' from=0ns to=8ns
+.measure pwr_c avg '-p(Vclk)' from=0ns to=8ns
 
 .end

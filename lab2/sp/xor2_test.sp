@@ -4,7 +4,7 @@
 * Libs and sub-circuits
 *------------------------------------------------
 .lib "../../ptm_mg_lib/lib/models" ptm7lstp
-.include xor2_tg.sp
+.include xor2_static.sp
 .include invertor_cmos.sp
 
 *------------------------------------------------
