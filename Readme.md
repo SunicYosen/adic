@@ -20,4 +20,4 @@ XOR Design
 
 ## [LAB2](/lab2)
 
-32-bit adder
+32-bit adder with Kogge Stone Architecture
