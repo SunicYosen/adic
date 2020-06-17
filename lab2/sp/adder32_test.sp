@@ -90,10 +90,19 @@ Xinvl32  c32   c32_n   vddl invl
 *------------------------------------------------
 * Measure
 *------------------------------------------------
-.measure pwr_dy  avg '-p(Vddd)' from=0.5ns to=8.5ns
-.measure pwr_clk avg '-p(Vclk)' from=0.5ns to=8.5ns
+* Dynamic
+.measure pwr_dy   avg '-p(Vddd)' from=0.5ns to=8.5ns
+.measure pwr_clkd avg '-p(Vclk)' from=0.5ns to=8.5ns
 
-.measure pwr_st  avg '-p(Vddd)' from=8.5ns to=16.5ns
-.measure pwr_clk avg '-p(Vclk)' from=8.5ns to=16.5ns
+* Static
+.measure pwr_s_0   avg '-p(Vddd)' from=9.2ns  to=9.5ns
+.measure pwr_s_1   avg '-p(Vddd)' from=10.2ns to=10.5ns
+.measure pwr_s_2   avg '-p(Vddd)' from=11.2ns to=11.5ns
+.measure pwr_s_3   avg '-p(Vddd)' from=12.2ns to=12.5ns
+.measure pwr_s_4   avg '-p(Vddd)' from=13.2ns to=13.5ns
+.measure pwr_s_5   avg '-p(Vddd)' from=14.2ns to=14.5ns
+.measure pwr_s_6   avg '-p(Vddd)' from=15.2ns to=15.5ns
+.measure pwr_s_7   avg '-p(Vddd)' from=16.2ns to=16.5ns
+.measure pwr_clks  avg '-p(Vclk)' from=8.5ns  to=17ns
 
 .end
